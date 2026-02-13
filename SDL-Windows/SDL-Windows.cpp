@@ -3,9 +3,37 @@
 
 #include <iostream>
 
-int main()
+
+#include "SDL.h"
+#include "utils.h"
+
+// Main Function with SDL required parameters
+int main(int argc, char *argv[])
 {
-    std::cout << "Hello World!\n";
+    // Initialise, if this fails, exit program
+    if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
+        return 1;
+    }
+
+    // Screen Dimensions
+    const int SCREEN_WIDTH = 800;
+    const int SCREEN_HEIGHT = 600;
+
+    // Screen Positions
+    int screenX{};
+    int screenY{};
+
+    SET_CENTER_OF_DISPLAY(SCREEN_WIDTH, SCREEN_HEIGHT, &screenX, &screenY);
+
+    // Create a window
+    SDL_Window* window = SDL_CreateWindow("Elliott Marples: 29183333", screenX, screenY, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+    
+
+    // Wait 4 secs before continuing program
+    SDL_Delay(4000);
+
+    // Exit
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
