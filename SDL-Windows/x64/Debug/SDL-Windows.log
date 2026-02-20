@@ -1,2 +1,17 @@
-﻿  SDL-Windows.cpp
-  SDL-Windows.vcxproj -> C:\Users\Student\Desktop\Game-Programming-W2\x64\Debug\SDL-Windows.exe
+﻿  utils.cpp
+C:\Users\Student\Game-Programming-W2\SDL-Windows\utils.h(11,6): error C2182: 'DRAW_TRIANGLE': this use of 'void' is not valid
+  (compiling source file 'utils.cpp')
+  
+C:\Users\Student\Game-Programming-W2\SDL-Windows\utils.h(11,20): error C2065: 'SDL_Renderer': undeclared identifier
+  (compiling source file 'utils.cpp')
+  
+C:\Users\Student\Game-Programming-W2\SDL-Windows\utils.h(11,34): error C2065: 'renderer': undeclared identifier
+  (compiling source file 'utils.cpp')
+  
+C:\Users\Student\Game-Programming-W2\SDL-Windows\utils.h(11,44): error C2062: type 'int' unexpected
+  (compiling source file 'utils.cpp')
+  
+C:\Users\Student\Game-Programming-W2\SDL-Windows\utils.cpp(16,6): error C2365: 'DRAW_TRIANGLE': redefinition; previous definition was 'data variable'
+      C:\Users\Student\Game-Programming-W2\SDL-Windows\utils.h(11,6):
+      see declaration of 'DRAW_TRIANGLE'
+  

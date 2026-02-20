@@ -5,6 +5,7 @@
 
 
 #include "SDL.h"
+#include "SDL_render.h"
 #include "utils.h"
 
 // Main Function with SDL required parameters
@@ -23,11 +24,41 @@ int main(int argc, char *argv[])
     int screenX{};
     int screenY{};
 
+    // Set positions to center window
     SET_CENTER_OF_DISPLAY(SCREEN_WIDTH, SCREEN_HEIGHT, &screenX, &screenY);
 
     // Create a window
     SDL_Window* window = SDL_CreateWindow("Elliott Marples: 29183333", screenX, screenY, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
     
+    // Renderer
+    SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+
+    // Set background to sky blue
+    SDL_SetRenderDrawColor(renderer, 150, 200, 255, 255);
+    SDL_RenderClear(renderer);
+
+    // Add triangle in center
+    int windowCenter[2] = { SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 };
+    int triangleSideLength = 128;
+
+    int trianglePoints[3][2] = {
+        { windowCenter[0], windowCenter[1] - (triangleSideLength / 2)},
+        { windowCenter[0] + (triangleSideLength / 2), windowCenter[1] + (triangleSideLength / 2) },
+        { windowCenter[0] - (triangleSideLength / 2), windowCenter[1] + (triangleSideLength / 2) }
+    };
+
+    SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+
+    for (int i = 0; i < 3; i++) {
+        int next = i + 1;
+        if (next > 2) {
+            next = 0;
+        }
+        SDL_RenderDrawLine(renderer, trianglePoints[i][0], trianglePoints[i][1], trianglePoints[next][0], trianglePoints[next][1]);
+    }
+
+    // Draw to screen
+    SDL_RenderPresent(renderer);
 
     // Wait 4 secs before continuing program
     SDL_Delay(4000);
