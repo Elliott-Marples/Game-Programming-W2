@@ -1,17 +1,15 @@
-﻿  utils.cpp
-C:\Users\Student\Game-Programming-W2\SDL-Windows\utils.h(11,6): error C2182: 'DRAW_TRIANGLE': this use of 'void' is not valid
-  (compiling source file 'utils.cpp')
-  
-C:\Users\Student\Game-Programming-W2\SDL-Windows\utils.h(11,20): error C2065: 'SDL_Renderer': undeclared identifier
-  (compiling source file 'utils.cpp')
-  
-C:\Users\Student\Game-Programming-W2\SDL-Windows\utils.h(11,34): error C2065: 'renderer': undeclared identifier
-  (compiling source file 'utils.cpp')
-  
-C:\Users\Student\Game-Programming-W2\SDL-Windows\utils.h(11,44): error C2062: type 'int' unexpected
-  (compiling source file 'utils.cpp')
-  
-C:\Users\Student\Game-Programming-W2\SDL-Windows\utils.cpp(16,6): error C2365: 'DRAW_TRIANGLE': redefinition; previous definition was 'data variable'
-      C:\Users\Student\Game-Programming-W2\SDL-Windows\utils.h(11,6):
-      see declaration of 'DRAW_TRIANGLE'
-  
+﻿  SDL-Windows.cpp
+C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(74,24): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(75,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(76,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(79,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(79,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(82,49): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(82,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(84,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(85,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(88,59): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(88,46): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(91,55): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(91,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  SDL-Windows.vcxproj -> C:\Users\Student\Game-Programming-W2\x64\Debug\SDL-Windows.exe

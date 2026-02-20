@@ -34,11 +34,13 @@ int main(int argc, char *argv[])
     SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 
     // Set background to sky blue
-    SDL_SetRenderDrawColor(renderer, 150, 200, 255, 255);
+    SDL_SetRenderDrawColor(renderer, 255, 140, 150, 255);
     SDL_RenderClear(renderer);
 
-    // Add triangle in center
+    // Define Window Center
     int windowCenter[2] = { SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 };
+    
+    // Add triangle in center
     int triangleSideLength = 128;
 
     int trianglePoints[3][2] = {
@@ -56,6 +58,37 @@ int main(int argc, char *argv[])
         }
         SDL_RenderDrawLine(renderer, trianglePoints[i][0], trianglePoints[i][1], trianglePoints[next][0], trianglePoints[next][1]);
     }
+
+    // Add purple diagonal line across screen
+    SDL_SetRenderDrawColor(renderer, 160, 42, 240, 255);
+    SDL_RenderDrawLine(renderer, 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+
+    // Draw a grid of 100 blue squares
+    SDL_SetRenderDrawColor(renderer, 150, 200, 255, 255);
+
+    int gridLength = 256;
+    int startX = windowCenter[0] - (gridLength / 2);
+    int startY = windowCenter[1] - (gridLength / 2);
+    int endX = startX + gridLength;
+    int endY = startY + gridLength;
+    float squareLength = gridLength / 10;
+    float lineX = startX;
+    float lineY = startY;
+
+    for (int i = 0; i < 10; i++) {
+        SDL_RenderDrawLine(renderer, lineX, startY, lineX, endY);
+        lineX += squareLength;
+    }
+    SDL_RenderDrawLine(renderer, lineX, startY, lineX, endY);
+
+    lineX = startX;
+    lineY = startY;
+
+    for (int i = 0; i < 10; i++) {
+        SDL_RenderDrawLine(renderer, startX, lineY, endX, lineY);
+        lineY += squareLength;
+    }
+    SDL_RenderDrawLine(renderer, startX, lineY, endX, lineY);
 
     // Draw to screen
     SDL_RenderPresent(renderer);
