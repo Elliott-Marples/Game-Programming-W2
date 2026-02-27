@@ -1,15 +1,17 @@
 ﻿  SDL-Windows.cpp
-C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(74,24): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(75,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(76,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(79,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(79,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(82,49): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(82,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(84,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(85,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(88,59): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(88,46): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(91,55): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Student\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp(91,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  SDL-Windows.vcxproj -> C:\Users\Student\Game-Programming-W2\x64\Debug\SDL-Windows.exe
+  utils.cpp
+C:\Users\Student\Desktop\Game-Programming-W2\SDL-Windows\utils.cpp(41,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Student\Desktop\Game-Programming-W2\SDL-Windows\utils.cpp(42,17): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Student\Desktop\Game-Programming-W2\SDL-Windows\utils.cpp(45,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Student\Desktop\Game-Programming-W2\SDL-Windows\utils.cpp(45,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Student\Desktop\Game-Programming-W2\SDL-Windows\utils.cpp(48,49): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Student\Desktop\Game-Programming-W2\SDL-Windows\utils.cpp(48,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Student\Desktop\Game-Programming-W2\SDL-Windows\utils.cpp(50,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Student\Desktop\Game-Programming-W2\SDL-Windows\utils.cpp(51,13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Student\Desktop\Game-Programming-W2\SDL-Windows\utils.cpp(54,59): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Student\Desktop\Game-Programming-W2\SDL-Windows\utils.cpp(54,46): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Student\Desktop\Game-Programming-W2\SDL-Windows\utils.cpp(57,55): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Student\Desktop\Game-Programming-W2\SDL-Windows\utils.cpp(57,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Student\Desktop\Game-Programming-W2\SDL-Windows\utils.cpp(61,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  SDL-Windows.vcxproj -> C:\Users\Student\Desktop\Game-Programming-W2\x64\Debug\SDL-Windows.exe

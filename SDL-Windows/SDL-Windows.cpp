@@ -38,26 +38,12 @@ int main(int argc, char *argv[])
     SDL_RenderClear(renderer);
 
     // Define Window Center
-    int windowCenter[2] = { SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 };
+    int windowCenterX = SCREEN_WIDTH / 2;
+    int windowCenterY = SCREEN_HEIGHT / 2;
     
     // Add triangle in center
-    int triangleSideLength = 128;
-
-    int trianglePoints[3][2] = {
-        { windowCenter[0], windowCenter[1] - (triangleSideLength / 2)},
-        { windowCenter[0] + (triangleSideLength / 2), windowCenter[1] + (triangleSideLength / 2) },
-        { windowCenter[0] - (triangleSideLength / 2), windowCenter[1] + (triangleSideLength / 2) }
-    };
-
     SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-
-    for (int i = 0; i < 3; i++) {
-        int next = i + 1;
-        if (next > 2) {
-            next = 0;
-        }
-        SDL_RenderDrawLine(renderer, trianglePoints[i][0], trianglePoints[i][1], trianglePoints[next][0], trianglePoints[next][1]);
-    }
+    DRAW_TRIANGLE(renderer, 256, windowCenterX, windowCenterY);
 
     // Add purple diagonal line across screen
     SDL_SetRenderDrawColor(renderer, 160, 42, 240, 255);
@@ -65,30 +51,14 @@ int main(int argc, char *argv[])
 
     // Draw a grid of 100 blue squares
     SDL_SetRenderDrawColor(renderer, 150, 200, 255, 255);
+    DRAW_GRID_OF_SQUARES(renderer, 10, 256, windowCenterX, windowCenterY);
 
-    int gridLength = 256;
-    int startX = windowCenter[0] - (gridLength / 2);
-    int startY = windowCenter[1] - (gridLength / 2);
-    int endX = startX + gridLength;
-    int endY = startY + gridLength;
-    float squareLength = gridLength / 10;
-    float lineX = startX;
-    float lineY = startY;
+    // Draw random lines of various lengths & colours
+    DRAW_RANDOM_LINES(renderer, 10, SCREEN_WIDTH, SCREEN_HEIGHT, 20);
 
-    for (int i = 0; i < 10; i++) {
-        SDL_RenderDrawLine(renderer, lineX, startY, lineX, endY);
-        lineX += squareLength;
-    }
-    SDL_RenderDrawLine(renderer, lineX, startY, lineX, endY);
-
-    lineX = startX;
-    lineY = startY;
-
-    for (int i = 0; i < 10; i++) {
-        SDL_RenderDrawLine(renderer, startX, lineY, endX, lineY);
-        lineY += squareLength;
-    }
-    SDL_RenderDrawLine(renderer, startX, lineY, endX, lineY);
+    //// Draw filled rectangle
+    //SDL_SetRenderDrawColor(renderer, 0, 100, 0, 255);
+    //DRAW_FILLED_RECT(renderer, 100, 100, 200, 150);
 
     // Draw to screen
     SDL_RenderPresent(renderer);
