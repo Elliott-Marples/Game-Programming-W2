@@ -16,7 +16,7 @@ private:
 	int start; // Ticks on start of program
 
 public:
-	Timer();
+	Timer(); // Constructor
 
 	void reset(); // Resets ticks on timer
 	int get(); // Gets ticks on timer
