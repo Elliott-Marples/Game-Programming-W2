@@ -1,2 +1,5 @@
-C:\Users\Student\Desktop\Game-Programming-W2\SDL-Windows\SDL-Windows.cpp;C:\Users\Student\Desktop\Game-Programming-W2\SDL-Windows\x64\Debug\SDL-Windows.obj
-C:\Users\Student\Desktop\Game-Programming-W2\SDL-Windows\utils.cpp;C:\Users\Student\Desktop\Game-Programming-W2\SDL-Windows\x64\Debug\utils.obj
+C:\Users\Student\Game-Programming-Workshops\SDL-Windows\game_loop.cpp;C:\Users\Student\Game-Programming-Workshops\SDL-Windows\x64\Debug\game_loop.obj
+C:\Users\Student\Game-Programming-Workshops\SDL-Windows\sdl_windows.cpp;C:\Users\Student\Game-Programming-Workshops\SDL-Windows\x64\Debug\sdl_windows.obj
+C:\Users\Student\Game-Programming-Workshops\SDL-Windows\square.cpp;C:\Users\Student\Game-Programming-Workshops\SDL-Windows\x64\Debug\square.obj
+C:\Users\Student\Game-Programming-Workshops\SDL-Windows\timer.cpp;C:\Users\Student\Game-Programming-Workshops\SDL-Windows\x64\Debug\timer.obj
+C:\Users\Student\Game-Programming-Workshops\SDL-Windows\utils.cpp;C:\Users\Student\Game-Programming-Workshops\SDL-Windows\x64\Debug\utils.obj

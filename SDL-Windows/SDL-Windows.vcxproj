@@ -125,11 +125,13 @@
   <ItemGroup>
     <ClCompile Include="game_loop.cpp" />
     <ClCompile Include="sdl_windows.cpp" />
+    <ClCompile Include="square.cpp" />
     <ClCompile Include="timer.cpp" />
     <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game_loop.h" />
+    <ClInclude Include="square.h" />
     <ClInclude Include="timer.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>

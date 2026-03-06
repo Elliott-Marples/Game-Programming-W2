@@ -1,14 +1,17 @@
+#include <cstdio>
 #include "game_loop.h"
 #include "SDL.h"
 #include "utils.h"
-#include <cstdio>
+#include "square.h"
 
-// Global Keys Array
+// Globals
 bool gKeys[MAX_KEYS];
+Square square;
 
 void Init(SDL_Renderer* renderer) {
 	SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
 	SDL_RenderClear(renderer);
+	square.Init(250, 250, 100, 100);
 }
 
 void Input(bool* done) {
@@ -49,11 +52,7 @@ void Render(SDL_Renderer* renderer, int ScreenWidth, int ScreenHeight) {
 	SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
 	SDL_RenderClear(renderer);
 
-	// Define Window Center
-	int windowCenterX = ScreenWidth / 2;
-	int windowCenterY = ScreenHeight / 2;
-
-	DRAW_TRIANGLE(renderer, 5, windowCenterX, windowCenterY);
+	square.Render(renderer);
 }
 
 void Destroy(SDL_Renderer* renderer, SDL_Window* window) {
