@@ -13,7 +13,9 @@ void DRAW_GRID_OF_SQUARES(SDL_Renderer* renderer, int squareCount, int gridLengt
 
 void DRAW_RANDOM_LINES(SDL_Renderer* renderer, int numOfLines, int screenWidth, int screenHeight, int maxThickness);
 
-//void DRAW_FILLED_RECT(SDL_Renderer* renderer, int startX, int startY, int endX, int endY);
+void DRAW_FILLED_RECT(SDL_Renderer* renderer, int startX, int startY, int endX, int endY, int color[3], int borderThickness, int borderColor[3]);
+
+void DRAW_GRADIENT_GRID(SDL_Renderer* renderer, int squareCount, int gridLength, int color[3], int windowCenterX, int windowCenterY);
 
 // End of Header Guard
 #endif

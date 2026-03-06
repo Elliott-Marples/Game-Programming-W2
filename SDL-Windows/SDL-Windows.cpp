@@ -1,5 +1,4 @@
 // SDL-Windows.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
 #include <iostream>
 
@@ -56,9 +55,15 @@ int main(int argc, char *argv[])
     // Draw random lines of various lengths & colours
     DRAW_RANDOM_LINES(renderer, 10, SCREEN_WIDTH, SCREEN_HEIGHT, 20);
 
-    //// Draw filled rectangle
-    //SDL_SetRenderDrawColor(renderer, 0, 100, 0, 255);
-    //DRAW_FILLED_RECT(renderer, 100, 100, 200, 150);
+    // Draw filled rectangle
+    SDL_SetRenderDrawColor(renderer, 0, 100, 0, 255);
+    int color[3] = { 255, 0, 0 };
+    int borderColor[3] = { 0, 0, 255 };
+    DRAW_FILLED_RECT(renderer, 100, 100, 200, 150, color, 10, borderColor);
+
+    // Draw grid of filled squares with gradient
+    int gridColor[3] = { 0, 255, 0 };
+    DRAW_GRADIENT_GRID(renderer, 5, 256, gridColor, windowCenterX, windowCenterY);
 
     // Draw to screen
     SDL_RenderPresent(renderer);
@@ -69,14 +74,3 @@ int main(int argc, char *argv[])
     // Exit
     return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
