@@ -1,6 +1,11 @@
 // Related Header
 #include "square.h"
 
+// Project Headers
+#include "world.h"
+
+
+
 // Constructor
 Square::Square() {
 	SDL_LogMessage(SDL_LOG_CATEGORY_APPLICATION, SDL_LOG_PRIORITY_INFO, "Square Constructed with Param(%p)", this);

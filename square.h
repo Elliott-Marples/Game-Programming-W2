@@ -11,6 +11,8 @@
 
 
 // Declarations
+class World;
+
 class Square {
 public:
 	Square(); // Constructor
@@ -27,6 +29,8 @@ public:
 
 	static int squareCounterTotal;
 	int squareCounter;
+
+	World* parent;
 };
 
 

@@ -14,7 +14,7 @@
 
 // Definitions
 #define MAX_KEYS (256)
-#define FRAME_RATE 30
+#define FRAME_RATE 1
 #define MOVE_LEFT 'w'
 
 
