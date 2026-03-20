@@ -11,6 +11,7 @@
 // Project Headers
 #include "timer.h"
 #include "square.h"
+#include "bounds.h"
 
 // Definitions
 #define MAX_KEYS (256)
@@ -38,6 +39,7 @@ public:
 	// Rectangle Properties
 	SDL_Rect rect;
 	Square square;
+	Bounds bounds;
 
 	// Pre Game Loop Functions
 	void Init(); // Initialises world

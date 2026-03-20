@@ -39,10 +39,9 @@ void Square::Update() {
 // Input
 void Square::Input(int pressedKey) {
 	switch (pressedKey) {
-		case 'w': {
+	case 'w':
 			printf("W was pressed");
 			break;
-		}
 	}
 }
 

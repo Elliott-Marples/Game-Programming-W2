@@ -128,14 +128,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bullet-container.cpp" />
+    <ClCompile Include="bullet.cpp" />
     <ClCompile Include="square.cpp" />
     <ClCompile Include="timer.cpp" />
+    <ClCompile Include="vector.cpp" />
     <ClCompile Include="world.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="bullet-container.h" />
+    <ClInclude Include="bullet.h" />
     <ClInclude Include="square.h" />
     <ClInclude Include="timer.h" />
+    <ClInclude Include="vector.h" />
     <ClInclude Include="world.h" />
   </ItemGroup>
   <ItemGroup>

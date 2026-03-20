@@ -23,7 +23,10 @@ World::World() {
 
 // Initialisation
 void World::Init() {
-	window = SDL_CreateWindow("Game", 250, 250, 800, 600, SDL_WINDOW_SHOWN);
+	bounds.right = 800;
+	bounds.bottom = 600;
+
+	window = SDL_CreateWindow("Game", 250, 250, bounds.right, bounds.bottom, SDL_WINDOW_SHOWN);
 	renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 
 	SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
@@ -69,6 +72,11 @@ void World::Input() {
 					printf("W has been pressed \n");
 					pressedKeys[SDLK_w] = true;
 					break;
+
+				case SDLK_SPACE:
+					printf("Space has been pressed \n");
+					pressedKeys[SDLK_SPACE] = true;
+					break;
 			}
 		}
 
@@ -77,6 +85,11 @@ void World::Input() {
 				case SDLK_w:
 					printf("W has been unpressed \n");
 					pressedKeys[SDLK_w] = false;
+					break;
+
+				case SDLK_SPACE:
+					printf("Space has been unpressed \n");
+					pressedKeys[SDLK_SPACE] = false;
 					break;
 			}
 		}
